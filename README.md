@@ -1,43 +1,27 @@
-# Meu Aplicativo React com Tailwind
+# Catálogo de Produtos com Carrinho - React + Tailwind
 
-Este projeto é uma aplicação React estilizada com Tailwind CSS e construída usando Vite. Ele serve como um modelo para criar aplicações web modernas com foco em desempenho e experiência do desenvolvedor.
+Este projeto é uma aplicação web desenvolvida em React e estilizada com Tailwind CSS, que simula um catálogo de produtos com funcionalidade de carrinho de compras. O objetivo é demonstrar como consumir uma API de produtos, exibir os itens em um layout moderno e permitir ao usuário adicionar produtos ao carrinho, visualizando-os em tempo real através de um modal.
 
 ## Funcionalidades
 
-- React para construção de interfaces de usuário
-- Tailwind CSS para estilização com utilitários
-- Vite para processos rápidos de desenvolvimento e build
+- Listagem de produtos consumidos de uma API externa
+- Visualização de detalhes básicos dos produtos (imagem, nome, preço)
+- Adição de produtos ao carrinho de compras
+- Exibição do número de itens no carrinho no cabeçalho
+- Modal para visualizar os produtos adicionados ao carrinho
+- Estilização responsiva utilizando Tailwind CSS
 
 ## Começando
 
-Para começar com este projeto, siga as instruções abaixo:
+Para rodar este projeto localmente:
 
-Vamos criar uma ToDo List utilizando react com Tailwind orientados por IA (Copilot)
-
-Seu repositório deve ser público!
-
-### Como iniciar este exercício
-
-Clique com o botão direito em **Copiar Exercício** e abra o link em uma nova aba.
-
-   <a id="copy-exercise" target="_blank" href="https://github.com/new?template_name=react-tailwind-template&template_owner=jaisonschmidt&name=react-tailwind-projectname&owner=%40me&visibility=public">
-      <img src="https://img.shields.io/badge/📠_Copiar_Exercício-008000" height="25pt"/>
-   </a>
-
-### Construindo para Produção
-
-Para construir a aplicação para produção, execute:
-
-```
-npm run build
+```bash
+npm install
+npm run dev
 ```
 
-Isso criará uma build otimizada da sua aplicação no diretório `dist`.
+## EstruturaAdd commentMore actions
 
-## Uso
-
-Você pode começar a modificar o arquivo `src/App.jsx` para alterar o componente principal da aplicação. Componentes adicionais podem ser criados no diretório `src/components`.
-
-## Licença
-
-Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes.
+- O componente `Header` exibe o nome da loja e o número de produtos no carrinho.
+- O componente `ProductCatalog` lista os produtos e permite adicioná-los ao carrinho.
+- O contexto `CartContext` gerencia o estado global do carrinho.
